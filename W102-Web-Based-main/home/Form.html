@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>C-C-C Report</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/53ba70cf24.js" crossorigin="anonymous"></script>
+    <script src="dom.js" defer></script>
+    <script src="hamburger.js" defer></script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <!-- to style for smaller screens-->
+        <header>
+            <img id="logoFull" src="images/logoFull.png" alt=""></img>
+            <img id="logoMob" src="images/logoMob.png" alt=""></img>
+            <h1>Climate Change Committee report</h1>
+            <a id="hamburger">
+                <i class="fa-solid fa-bars fa-3x"></i>
+            </a>
+        </header>
+
+        <nav class="mainNav">
+            <ul>
+                <li class="nav"><a href=index.html>Home</a></li>
+                <li class="nav"><a href=Chapter-x.html>Global</a></li>
+                <li class="nav"><a href=Chapter-y.html>Electricity</a></li>
+                <li class="nav"><a href=Chapter-z.html>Agriculture</a></li>
+                <li class="nav"><a href=Team.html>Team</a></li>
+                <li class="thisnav"><a href=Form.html>Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+
+    <main id="main">
+        <h3>
+            Contact Mimo Yoga Studio
+        </h3>
+        <div>
+            <p class="form">
+                required information is marked with an asterisk (*)
+
+                ALSO YOU WILL LIKELY NEED TO MAKE OPTIONS CSS
+            </p>
+
+
+            <form method="" action="" id="form">
+                <fieldset>
+                    <legend>Contact form</legend>
+                    <label>Forename *</label>
+                    <input type="text" id="forename" required placeholder="Jessie"/>
+                    <label>Surname *</label>
+                    <input type="text" id="surname" required placeholder="Bloggs"/>
+                    <label>Email *</label>
+                    <input type="email" id="email" required placeholder="your email" />
+<!-- https://stackoverflow.com/questions/5805059/how-do-i-make-a-placeholder-for-a-select-box -->
+                    <label for = "age">Age Range:</label>
+                    <select name="age" id="age">
+                        <option value="yourage" disabled selected>Your Age</option>
+                        <option value="under18">Under 18</option>
+                        <option value="18-25">18 - 25</option>
+                        <option value="26-35">26 - 35</option>
+                        <option value="36-45">36 - 45</option>
+                        <option value="46-55">46 - 55</option>
+                        <option value="56-65">56 - 65</option>
+                        <option value="over65">Over 65</option>
+                        <option value="nonans">Prefer not to say</option>
+                    </select>
+                    <label>Message *</label>
+                    <textarea id="message" placeholder="your text here"></textarea>
+
+
+                    <button id="submit">Send Now</button>
+
+                </fieldset>
+            </form>
+
+
+        </div>
+
+
+    </main>
+
+
+
+    <footer>
+        <p>Copyright ©2022 Mimo Yoga Studio<br>
+            <a href=mailto:zcz21jvu@uea.ac.uk>Adam Reed</a>
+        </p>
+    </footer>
+</body>
+
+</html>

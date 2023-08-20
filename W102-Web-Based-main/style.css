@@ -1,0 +1,647 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing:border-box ; */
+}
+
+html {
+    background-color: #ffffff;
+}
+
+body {
+    background-color: #EEEEEE;
+    color: #060000;
+    font-family: work sans, Arial, Helvetica, sans-serif;
+    font: 16px;
+    line-height: 1.5;
+}
+
+/******************* Font Test *******************/
+
+h1 {
+    color: #ffffff;
+    font-size: 4vw;
+}
+
+h2 {
+    color: #280149;
+    font-size: xx-large;
+    border-bottom: #280149;
+    border-style: none none solid none;
+    border-width: 5px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+h3 {
+    color: #7142FF;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+h4 {
+    color: #7142FF;
+    font-weight: bold;
+    font-size: large;
+}
+
+
+/******************* TOP HEADER BAR *******************/
+
+header {
+    background-color: #280149;
+    height: 6%;
+    min-height: 100px;
+    text-align: center strong;
+}
+
+header h1 {
+    padding-left: 2%;
+}
+
+/******************  logocontrols  *******************/
+
+#logoFull {
+    padding-top: 15px;
+    width: 14%;
+    min-width: 220px;
+    display: block;
+    float: left;
+    height: 70%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+#logoMob {
+    display: none;
+}
+
+
+
+/******************* NAVIGATION BAR *******************/
+
+nav {
+    text-align: center;
+    height: 30px;
+    padding: 8px;
+    background-color: #AB6B99;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+
+.thisnav {
+    display: inline-block;
+    padding: 2px 24px 8px 24px;
+    color: #FFAC00;
+    font-weight: bold;
+    text-decoration: underline
+}
+
+.nav {
+    display: inline-block;
+    padding: 2px 24px 8px 24px;
+    
+}
+
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: #EEEEEE
+}
+
+a:visited {
+    color: #ffffff
+}
+
+a:hover {
+    color: #FFAC00;
+}
+
+ul {
+    margin-left: 4%;
+}
+
+ol{
+    margin-left: 4%;
+}
+
+
+
+/******************* Main *******************/
+
+
+main {
+    margin: 8px 1% auto 1%;
+    padding: 16px;
+    border: 2px solid white;
+    border-radius: 20px;
+
+}
+
+.ContentPageList {
+    list-style-type: lower-alpha;
+    padding-left: 5%;
+}
+
+
+section {
+   padding: 20px;
+    background-color:#EEEEEE ;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 20px;
+   
+}
+
+section>p {
+    text-align: center;
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: top;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  .swiper-button-next {
+    background:#280149 ;
+    border-radius: 30px;
+    border: 10px solid #280149;
+    --swiper-theme-color:white;
+    opacity: 0.5;
+  }
+  .swiper-button-next:hover{
+    opacity: 1;
+  }
+  .swiper-button-prev{
+     background:#280149 ;
+    border-radius: 30px;
+    border: 10px solid #280149;
+    --swiper-theme-color:white;
+    opacity: 0.5;
+  }
+  .swiper-button-prev:hover{
+    opacity: 1;
+  }
+
+ 
+
+.service {
+
+    width: 47%;
+    background-color: white;
+    padding: 24px 11px 24px 11px;
+    margin: auto auto 20px 5px;
+    text-align: center;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+/******************* FOOTER *******************/
+
+footer {
+    background-color: #573A56;
+    font-size: 0.7em;
+    text-align: center;
+    color: #fff9e8;
+    padding: 16px;
+    margin-top: 8px;
+}
+
+footer a:link {
+    color: #fff9e8
+}
+
+footer a:hover {
+    color: #e8fff9
+}
+
+
+#hamburger {
+    display: none;
+}
+
+
+
+/******************* GRID for content *******************/
+.sec3 {
+    display: grid !important;
+    width: 100%;
+    grid-template-columns: 50% 50%;
+    overflow: auto;
+}
+.content {
+    display: grid !important;
+    width: 100%;
+    overflow: auto;
+}
+
+/******************* FORM PAGE SECTION *******************/
+
+#form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+fieldset {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto 2% auto 2%;
+    width: 100%;
+    /* should be 100% */
+    border: 20px solid #3F2860;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    width: 100%;
+    margin: 1%;
+}
+
+legend {
+    padding: 5px;
+    font-size: medium;
+    word-spacing: 4px;
+}
+
+input,
+textarea {
+    width: 95%;
+    padding: 10px;
+    margin: 0px 5px 0px 5px;
+    border: 1px solid salmon;
+    background-color: pink;
+    display: block;
+}
+
+#age {
+    width: 95%;
+    padding: 10px;
+    margin: 0px 5px 0px 5px;
+    border: 1px solid salmon;
+    background-color: pink;
+    display: block;
+}
+
+#yourage {
+    display: hidden;
+}
+
+
+input:hover {
+    background-color: white;
+}
+
+textarea:hover {
+    background-color: white;
+}
+
+#submit {
+    margin: 2% 45% 2% 45%;
+    font-size: 2vw;
+    /* min-width: 150px; */
+    padding: 5px;
+    border: 1px solid yellowgreen;
+    border-radius: 5px;
+    background-color: #B8195A;
+    color: #EFF4F7;
+    text-align: center;
+    align-self: 40%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/******************* SINGLE ROW SIZE SECTION *******************/
+@media only screen and (min-width: 769px) and (max-width: 1120px) {
+
+    header h1 {
+        line-height: auto;
+        padding-top: 16px;
+        padding-left: 2%;
+    }
+  
+
+    /******************* TWO SECTION PAGE *******************/
+    .sec3 {
+        display: grid !important;
+        width: 100%;
+        overflow: auto;
+        grid-template-columns: 1;
+    }
+    .content {
+        display: grid !important;
+        width: 100%;
+        overflow: auto;
+        grid-template-columns: 1;
+    }
+    /******************  logocontrols  *******************/
+
+    #logoFull {
+        padding-left: 1%;
+        padding-right: 0.9%;
+        width: 4%;
+    }
+
+
+    #logoMob {
+        display: none;
+    }
+
+}
+
+
+/******************* TEAM PAGE - IMAGES-Bio Hover Overlay *******************/
+
+.service {
+    position: relative;
+    width: 47%;
+    background-color: white;
+    padding: 24px 11px 24px 11px;
+    margin-bottom: 30px;
+    text-align: center;
+    border-radius: 20px;
+    box-sizing: border-box;
+    display: inline-block;
+
+
+}
+
+.image{
+    display: block;
+    width: 100%;
+
+}
+
+.imageOverlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: 0, 0, 0, 0.6;
+    color: white;
+    display: flex;
+    font-family: sans-serif;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 1s; /* This adds a timer transition */
+
+
+}
+
+/* .imageOverlay--primary{ // if wanted to change colour of background vs blur
+background: purple;
+} */
+
+.imageOverlay--blur{
+    backdrop-filter: blur(15px);
+    }
+
+
+.imageOverlay:hover {
+    opacity: 1;
+    cursor: pointer;
+
+}
+
+.imageOverlay:hover > * { /* > * targets all child elements */
+    transform: translateY(0px);
+
+}
+
+
+.imageOverlay > * {
+    transform: translateY(100px);
+    transition: transform 1s;
+}
+
+
+.imageDescription1{
+    font-size: 1.25em;
+    margin-top: 0;
+    
+}
+
+
+#teamHeader{
+    text-align: center;
+    display: inline-block;
+    
+    
+}
+
+/* Also added a teamHeader to mediaQuery */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/******************* MOBILE SIZE SECTION *******************/
+@media only screen and (max-width: 768px) {
+
+
+    .sec3 {
+        display: grid !important;
+        width: 100%;
+        overflow: auto;
+        grid-template-columns: 1;
+    }
+    .content {
+        display: grid !important;
+        width: 100%;
+        overflow: auto;
+        grid-template-columns: 1;
+    }
+
+
+    h1 {
+        color: #ffffff;
+        font-size: 4vw;
+    }
+
+    header {
+        height: 55px;
+    }
+
+    header h1  {
+        display: block;
+        line-height: 100%;
+        padding-top: 16px;
+        padding-left: 1%;
+        padding-right: 1%;
+        text-align-last: auto;
+        word-break: break-all;
+    }
+  
+
+
+    /******************* BURGER MENU *******************/
+    #hamburger {
+        float: right;
+        display: inline-block;
+        padding-right: 1%;
+        padding-top: 4%;
+        height: 70%;
+        width: auto;
+        
+
+        color: #EEEEEE;
+    }
+
+    .thisnav {
+        display: block;
+        padding: 10px;
+        width: 70%;
+        font-size: small;
+    }
+
+    .nav {
+        display: block;
+        padding: 10px;
+        width: 70%;
+        font-size: small;
+    }
+
+    /******************* WRAPPER DOES THE SIZE ALTERATION *******************/
+    #wrapper {
+        position: relative;
+    }
+
+    /******************* DROP DOWN MENU *******************/
+    .mainNav {
+        position: absolute;
+        z-index: 1;
+        right: 0px;
+        top: 100px;
+        height: 0px;
+        overflow: hidden;
+        padding: 0%;
+        font-weight: bold;
+       
+    }
+
+    .showNav {
+        height: auto;
+        background-color: #7142FF;
+    }
+
+    .showNav a:hover {
+        background-color: black;
+    }
+
+    section {
+        flex-direction: column;
+    }
+
+    .service {
+        width: 95%;
+        margin-bottom: 20px;
+
+    }
+
+    /******************  logocontrols  *******************/
+    #logoFull {
+        display: none;
+    }
+
+    #logoMob {
+        padding: 2%;
+        height: 70%;
+        width: auto;
+        display: block;
+        float: left;
+    }
+
+    /******************* TOP HEADER BAR *******************/
+
+    header {
+        font-size: 2vw;
+        vertical-align: auto;
+    }
+
+    #figureId {
+        position: relative;
+        width: 47%;
+        background-color: white;
+        padding: 24px 11px 24px 11px;
+        margin: auto auto 20px 5px;
+        text-align: center;
+        border-radius: 20px;
+        box-sizing: border-box;
+        display: inline-block;
+        margin-left: 50%;
+        margin-right: 50%;
+    }
+
+    #teamHeader {
+        padding-top: 5%;
+        margin-left: 0%;
+        
+    }
+
+  
+}
+
+    
